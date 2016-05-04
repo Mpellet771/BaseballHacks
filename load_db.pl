@@ -5,7 +5,7 @@
 use save_to_db;
 
 use DBI;
-my $DSN = "dbi:mysql:database=boxes;host=localhost;user=root;password=Tab75North";
+my $DSN = "dbi:mysql:database=boxes;host=localhost;user=root userID;password=passsword";
 my $dbh = DBI->connect($DSN);
 use XML::Simple;
 my $xs = new XML::Simple(ForceArray => 1, KeepRoot => 1, KeyAttr => 'boxscore');
